@@ -1,0 +1,7 @@
+{
+    "dependencies": {
+        "bleno": "github:notjosh/bleno#inject-bindings",
+        "bleno-mac": "github:notjosh/bleno-mac",
+        "convert-string": "^0.1.0"
+    }
+}
