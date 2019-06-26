@@ -22,7 +22,6 @@ util.inherits(EchoCharacteristic, BlenoCharacteristic);
 
 function writeToFile(data) {
   console.log(data);
-  // data = "UEsDBBQACAgIAMRa0k4AAAAAAAAAAAAAAAARAAAARG93bmxvYWQvdGVzdC50eHQrSS0uMTQyNjEFAFBLBwjIYKmTCwAAAAkAAABQSwECFAAUAAgICADEWtJOyGCpkwsAAAAJAAAAEQAAAAAAAAAAAAAAAAAAAAAARG93bmxvYWQvdGVzdC50eHRQSwUGAAAAAAEAAQA/AAAASgAAAAAA"
   var buff = Buffer.from(data, 'base64');
   fs.writeFile("./test.zip", buff, function(err){
     console.log('to file error');
